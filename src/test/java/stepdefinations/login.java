@@ -13,6 +13,7 @@ public class login  extends BaseFile {
 	@Given("^As a user I navigate to \"(.*?)\"$")
 	public void as_a_user_I_navigate_to(String url) throws Throwable {
 	    web_driver.get(url);
+	    seleniumwait.wait(3);
 	
 	}
 	
@@ -25,6 +26,7 @@ public class login  extends BaseFile {
 
 	@When("^I click submit button$")
 	public void i_click_submit_button() throws Throwable {
+		seleniumwait.wait(2);
 		  seleniumutils.clickByXPath_("submitbtn");
 
 	

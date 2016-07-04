@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = { "src/test/resources/features" }, dryRun = false, strict = false, monochrome = true, format = {
-		"pretty", "html:target/cucumber-reports" }, glue = { "stepdefinations" }, tags = "@login")
+		"pretty", "json:C:\\Program Files (x86)\\Jenkins\\workspace\\cucumber\\cucumber" }, glue = { "stepdefinations" }, tags = "@login")
 
 public class RunTest extends BaseFile {
 
